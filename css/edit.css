@@ -1,0 +1,26 @@
+@import url('dashboard.css');
+
+body {
+  background: var(--roxo);
+}
+
+form {
+  position: relative;
+  top: 25%;
+  height: 50%;
+}
+
+.cancelar {
+  font-size: 2rem;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background-color: var(--rosa);
+  width: 213px;
+  height: 51px;
+  border-radius: 20px;
+  cursor: pointer;
+}

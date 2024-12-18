@@ -1,0 +1,157 @@
+:root {
+  --roxo: #242028;
+  --rosa: #AE387B;
+  --cinza: #3E3E48;
+}
+
+* {
+  font-family: 'Sour Gummy';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--roxo);
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  width: 95%;
+  height: 90%;
+  border-radius: 20px;
+  background: var(--cinza);
+}
+
+.skins-container {
+  position: relative;
+  top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 5%;
+  row-gap: 50px;
+}
+
+.skin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.skin-image {
+  border-radius: 20px;
+}
+
+.skin-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.edit {
+  font-size: 2rem;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background-color: var(--rosa);
+  width: 90%;
+  height: 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit:hover {
+  transform: scale(1.1);
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  background: var(--rosa);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.add:hover {
+  transform: scale(1.1);
+}
+
+.popup {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #00000060;
+  transition: 0.4s ease-in;
+  z-index: -2;
+}
+
+.inner-popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 540px;
+  height: 400px;
+  background: var(--roxo);
+}
+
+form {
+  display: grid;
+  width: 100%;
+  height: 90%;
+  align-items: center;
+  justify-items: center;
+}
+
+form label {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 80%;
+}
+
+form input {
+  text-indent: 10px;
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.adicionar {
+  width: 213px;
+  height: 51px;
+  border: none;
+  border-radius: 20px;
+  background: #AE387B;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+}
